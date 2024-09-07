@@ -1,0 +1,78 @@
+@keyframes transitionin{
+    from{
+    opacity: 0;
+    transform:scale(0.6);
+    
+    }
+    to{
+    opacity: 1;
+    transform: scale(1);
+    
+    }
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url(sunset_bg.webp) fixed no-repeat;
+    background-size: cover;
+    animation: transitionin 1s;
+}
+.body{
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    display: grid;
+    place-items: center;
+}
+.log_in{
+    height:500px ;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+h1,label{
+    color: #fff;
+}
+h1{
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:normal;
+}
+label{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box1 ,.box2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input{
+    border-radius:10px;
+    border: 1px #fff;
+    margin-left: 10px;
+    height: 25px;
+    background: rgba(248, 243, 243, 0.5);
+}
+i{
+    margin-left: 30px;
+}
+#next{
+    background:linear-gradient(white,skyblue,blue);
+}
+.next{
+    width: 90%;
+    display: grid;
+    place-items: end;
+}
+#next:active{
+    transform: scale(1.05);
+}
+
